@@ -1,0 +1,262 @@
+<html>
+
+<head>
+  <title>dec28</title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custome CSS link -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="head1"></div>
+    <img src="images/download (1).png">
+  </header>
+
+  <section>
+    <nav class="menu">
+      <a href="" class="phone">Phone</a>
+      <a href="" class="TV&Display">TV&Display</a>
+      <a href="" class="accessories">Accessories</a>
+      <a href="" class="offers">Offers</a>
+      <a href="" class="store">Store</a>
+      <a href="" class="onetopia">Onetopia</a>
+      <a href="" class="community">Community</a>
+      <a href="" class="support">Support</a>
+
+    </nav>
+  </section>
+
+  <section class="img">
+    <div>
+      <img src="images/oneplus 10j.jfif" width="105%" height="700px">
+    </div>
+
+    <div>
+      <h6></h6>
+    </div>
+  </section>
+  <section>
+    <div><img src="images/brand tv.jpg" width="1590px" height="1000px">
+
+
+    </div>
+
+
+  </section>
+  <section>
+
+    <div class="new">
+      <div class="row">
+        <div class="card">
+          <img src="images/oneplus10r.jfif">
+          <div class="box">
+            <h2>ONEPLUS 10R 5G</h2>
+            <h3>PRODUCT DETAILS</h3>
+            <li>RAM : 8GB</li>
+            <li>ROM : 128GB</li>
+
+            <h3>starts ₹34,999</h3>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new">
+      <div class="row">
+        <div class="card">
+          <img src="images/oneplus 10t.jfif">
+          <div class="box">
+            <h2>ONEPLUS 10T</h2>
+            <h3>PRODUCT DETAILS</h3>
+            <li>RAM : 10GB</li>
+            <li>ROM : 256GB</li>
+
+            <h4> starts ₹50,000</h4>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new">
+      <div class="row">
+        <div class="card">
+          <img src="images/oneplus nord.jfif">
+          <div class="box">
+            <h2>ONEPLUS NORD C2 LITE 5G</h2>
+            <h3>PRODUCT DETAILS</h3>
+            <li>RAM : 8GB</li>
+            <li>ROM : 128GB</li>
+
+            <h4>starts ₹18,999</h4>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <section>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/tv1.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/tv3.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/tvn.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <section>
+      <div>
+        <div class="row1">
+          <div class="colume2">
+            <h2>phones</h2>
+            <p>OnePlus 10T 5G</p>
+            <p>OnePlus Nord 2T 5G</p>
+            <p> 10R 5G</p>
+            <P>OnePlus Nord CE 2 Lite 5G</p>
+            <p>OnePlus 10 Pro 5G</p>
+            <p>OnePlus Nord CE 2 5G</p>
+            <p>OnePlus Nord 2 5G</p>
+          </div>
+
+          <div class="colume2">
+            <h2>store</h2>
+            <p>TV&Display</p>
+            <p>Audio</p>
+            <p> Wearless</p>
+            <p>Airpods</p>
+            <p>Smart watch</p>
+            <p>Bundles</p>
+            <p>Gears</p>
+          </div>
+
+
+
+          <div class="colume2">
+            <h2>Support</h2>
+            <p>Repair Service</p>
+            <p>Repair Pricing</p>
+            <p> User Mnaual</p>
+            <P>TV Spare Parts</p>
+            <p>Software Upates</p>
+            <p>Service Center</p>
+            <p>Shopping</p>
+          </div>
+
+          <div class="colume2">
+            <h2>Explore</h2>
+            <p>About OnePlus</p>
+            <p> Community</P>
+            <p> Find a store</p>
+            <p> OnePlus Store app</p>
+            <p>OxygenOS</p>
+            <p> Press</p>
+            <p> Blog</p>
+            <p>Careers</p>
+          </div>
+
+          <div class="colume2">
+            <h2>Programs</h2>
+            <p>Exchange program</p>
+            <p>Red Cable</p>
+            <p>Campus Opportunites</p>
+            <p>Event</p>
+            <P>Software</P>
+            <p>Event run</p>
+            <p>case event</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="lab_social_icon_footer">
+      <!-- Include Font Awesome Stylesheet in Header -->
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        
+      <nav>
+<ul>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">User Agreement</a></li>
+  <li><a href="#">Terms of Sale</a></li>
+  <li><a href="#">E-Waste Management</a></li>
+  <li><a href="">Security Feedback</a></li>
+</ul>
+        
+      </nav>     
+      
+
+      <div class="container">
+              <div class="text-center center-block">
+                    <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          </div>
+      </div>
+      </section>
+
+
+
+</body>
+
+</html>
